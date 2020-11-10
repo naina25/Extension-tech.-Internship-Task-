@@ -64,3 +64,50 @@ h1{
     background-color: #fff;
     border-color: #ccc;
 }
+input.form-control {
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #999;
+    padding: 6px 20px;
+    box-sizing: border-box
+}
+input.form-control:focus {
+    box-shadow: 0 0 red;
+    border-bottom: 2px solid rgb(146, 37, 37);
+}
+label{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+button:focus {
+    outline: none;
+}
+.modal-dialog{
+    border-radius: 20px;
+}
+.modal-header{
+    justify-content: center;
+    padding-left: 200px;
+}
+.modal-title{
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(146, 37, 37);
+}
+.modal-body{
+    padding: 1.5rem;
+}
+.modal-footer{
+    justify-content: center;
+}
+.modal-footer button.btn-danger{
+    background-color: rgb(145, 36, 36);
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+}
