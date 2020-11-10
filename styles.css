@@ -105,9 +105,13 @@ button:focus {
 .modal-footer{
     justify-content: center;
 }
-.modal-footer button.btn-danger{
+button.btn-danger{
     background-color: rgb(145, 36, 36);
     width: 200px;
     border-radius: 30px;
     border: none;
 }
+/* .btn-warning:hover{
+    background-color: rgb(145, 36, 36);
+    border-color: rgb(145, 36, 36);
+} */
