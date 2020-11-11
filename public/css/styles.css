@@ -4,7 +4,7 @@ html{
     height: 100%;
 }
 body{
-    background-image: url("imgs/picture.jpg");
+    background-image: url("/imgs/picture.jpg");
     background-size: cover;
     background-position: relative;
     background-repeat: no-repeat;
@@ -71,11 +71,16 @@ input.form-control {
     border-radius: 0;
     border-bottom: 1px solid #999;
     padding: 6px 20px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    background-color: whitesmoke;
 }
 input.form-control:focus {
     box-shadow: 0 0 red;
     border-bottom: 2px solid rgb(146, 37, 37);
+    background-color: whitesmoke;
+}
+h5.text-muted.text-center {
+    margin: 10px;
 }
 label{
     font-family: 'Merriweather', serif;
@@ -85,8 +90,8 @@ label{
 button:focus {
     outline: none;
 }
-.modal-dialog{
-    border-radius: 20px;
+.modal-content{
+    background-color: whitesmoke;
 }
 .modal-header{
     justify-content: center;
@@ -101,6 +106,7 @@ button:focus {
 }
 .modal-body{
     padding: 1.5rem;
+    padding-bottom: 0rem;
 }
 .modal-footer{
     justify-content: center;
@@ -110,4 +116,9 @@ button.btn-danger{
     width: 200px;
     border-radius: 30px;
     border: none;
+    margin-left: 120px;
+    font-size: 1.2rem;
+}
+.g-signin2{
+    text-emphasis: none;
 }
