@@ -32,8 +32,8 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav navbar-right">
-                        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#Modal2" href="#"><i class="fas fa-user"></i> Login</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#Modal1" href="#"><i class="fas fa-user-plus"></i> SignUp</a></li>
+                        <li class="nav-item"><a href="./index.html" onclick="signOut()"><i class="fas fa-sign-out-alt mr-1"></i>Sign out</a></li>
+                        
                         </ul>
                     </div>
                 </div>
@@ -117,6 +117,14 @@
               </div>
             </div>
           </div>
+        <script>
+            function signOut() {
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function () {
+                console.log('User signed out.');
+                });
+            }
+        </script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
